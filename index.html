@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <input type="number" name="" id="number-1" value="0">
+        <input type="number" name="" id="number-2" value="0">
+    </form>
+    <button onclick="Addition()">Addition(+)</button>
+    <button onclick="Subtraction()">Subtraction(-)</button>
+    <button onclick="Multiplication()">Multiplication(X)</button>
+    <button onclick="Division()">Division(/)</button>
+    <div id="result"></div>
+    <script>
+        let number_1 = document.querySelector('#number-1');
+        let number_2 = document.querySelector('#number-2');
+        let result = document.querySelector('#result');
+        function Addition() {
+            let a = number_1.value*1 + number_2.value*1;
+            return result.innerHTML = `Result: ${a}`;
+        }
+        function Subtraction() {
+            let a = number_1.value*1 - number_2.value*1;
+            return result.innerHTML = `Result: ${a}`;
+        } 
+        function Multiplication() {
+            let a = number_1.value*1 * number_2.value*1;
+            return result.innerHTML = `Result: ${a}`;
+        }
+        function Division() {
+            let a = number_1.value*1 / number_2.value*1;
+            return result.innerHTML = `Result: ${a}`;
+        }
+
+    </script>
+</body>
+</html>
